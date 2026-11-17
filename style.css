@@ -189,7 +189,8 @@ button, input, select { font: inherit; color: inherit; }
 
 @media (min-width: 700px) {
   .intro h1 { font-size: 42px; }
-  .moon { right: 6vw; top: 40px; width: 160px; height: 160px; }
+  .moon { display: none; } /* 넓은 화면은 배경 사진 속 달이 보이므로 그린 달은 숨김 */
+  .sky-photo.on { opacity: .7; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
